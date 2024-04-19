@@ -1,0 +1,27 @@
+.selections__text {
+  max-width: 950px;
+}
+.selections__content {
+  margin-top: 50px;
+}
+.selections__list {
+  margin-top: 20px;
+}
+
+@media (max-width: 1400px) {
+  .selections__content {
+    margin-top: 50px;
+  }
+  .selections__list {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 525px) {
+  .selections__content {
+    margin-top: 50px;
+  }
+  .selections__list {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=selections.css.map */

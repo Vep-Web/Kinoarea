@@ -1,0 +1,151 @@
+body {
+  background-color: var(--mirage-2);
+}
+
+a {
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+.main {
+  position: relative;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  gap: 28px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+.decor {
+  margin-top: 13px;
+  background-image: url(../img/svg/Line1.svg);
+  width: 54px;
+  height: 2px;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-pagination {
+  font-size: 20px;
+}
+
+.burger-genre {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 880px;
+  }
+  .decor {
+    display: none;
+  }
+  .d-flex {
+    -webkit-box-align: normal;
+    -ms-flex-align: normal;
+    align-items: normal;
+  }
+  .d-grid {
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+    gap: 13px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 690px;
+  }
+  .d-grid {
+    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(6, 1fr);
+    gap: 13px;
+  }
+  .swiper-pagination {
+    font-size: 17px;
+  }
+}
+@media (max-width: 525px) {
+  .container {
+    max-width: 400px;
+  }
+  .d-grid {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+  }
+  .d-flex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .burger-genre {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 27px;
+    height: 27px;
+    padding: 0 6px;
+    margin-top: 7px;
+  }
+  .burger-genre .burger-btn__span {
+    background: var(--white);
+    display: block;
+    width: 14px;
+    height: 1px;
+  }
+  .burger-genre .burger-btn__span:not(:last-child) {
+    margin-bottom: 3px;
+  }
+}
+/*# sourceMappingURL=blocks.css.map */

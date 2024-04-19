@@ -1,0 +1,311 @@
+.card {
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+  -ms-grid-row-span: 1;
+  grid-row: 1 span;
+  max-height: 520px;
+  border-radius: 10px;
+  position: relative;
+}
+.card__bac {
+  display: none;
+  height: 465px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(54, 87, 203, 0.65);
+  border-radius: 10px;
+}
+.card__rating {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  z-index: 1;
+  min-width: 62px;
+  min-height: 33px;
+  border-radius: 5px;
+  background: var(--atlantis);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.card .rating-norm {
+  background: var(--lemon);
+}
+.card .rating-low {
+  background-color: var(--flush-mahogany);
+}
+.card__btn {
+  display: none;
+  position: absolute;
+  top: 39%;
+  left: 17%;
+  border: none;
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--cerulean-blue);
+  font-size: 18px;
+  font-style: var(--normal);
+  font-weight: var(--fon700);
+  line-height: 166.5%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(55, 94, 232, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(55, 94, 232, 0.4);
+  padding: 20px 40px;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.card__btn:active {
+  color: var(--white);
+  background-color: var(--cerulean-blue);
+}
+.card__link-category {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.card__link-category:hover {
+  color: var(--atlantis);
+}
+.card__link-category:focus {
+  color: var(--atlantis);
+}
+.card__link-category:active {
+  color: var(--cerulean-blue);
+}
+.card img {
+  border-radius: 10px;
+  background-color: lightgray 50%;
+}
+.card__rating-text {
+  color: var(--white);
+  font-size: 18px;
+  font-style: var(--normal);
+  font-weight: var(--fon700);
+  line-height: var(--normal);
+}
+.card__picture {
+  border-radius: 10px;
+}
+.card__link {
+  display: block;
+  margin: 4px 0;
+}
+.card:hover .card__bac {
+  display: none;
+}
+.card:hover .card__btn {
+  display: none;
+}
+
+.card-people {
+  position: relative;
+}
+.card-people img {
+  border-radius: 10px;
+  background-color: lightgray 50%;
+  max-width: 444px;
+  width: 100%;
+}
+.card-people__link {
+  display: block;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.card-people__link:hover {
+  color: var(--lemon);
+}
+.card-people__link:focus {
+  color: var(--lemon);
+}
+.card-people__link:active {
+  color: var(--cerulean-blue);
+}
+.card-people__position {
+  position: absolute;
+  top: 10px;
+  left: 17px;
+}
+.card-people__info {
+  position: absolute;
+  bottom: 40px;
+  left: 37px;
+}
+.card-people .author-link {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.card-people .author-link:hover {
+  color: var(--lemon);
+}
+.card-people .author-link:focus {
+  color: var(--lemon);
+}
+.card-people .author-link:active {
+  color: var(--cerulean-blue);
+}
+.card-people__text {
+  margin-bottom: 6px;
+}
+
+.card-news {
+  position: relative;
+  -ms-grid-column-span: 2;
+  grid-column: 2 span;
+  -ms-grid-row-span: 1;
+  grid-row: 1 span;
+  margin-left: -33px;
+}
+.card-news__info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 40px;
+  top: 38px;
+  left: 33px;
+}
+.card-news__info-mini {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+}
+.card-news__blog {
+  position: absolute;
+  bottom: 65px;
+  left: 33px;
+}
+.card-news__blog-mini {
+  position: absolute;
+  bottom: 23px;
+  left: 15px;
+}
+.card-news img {
+  border-radius: 10px;
+}
+.card-news__bac {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  background-color: rgba(54, 87, 203, 0.65);
+  border-radius: 10px;
+  min-height: 185px;
+}
+.card-news__btn {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 17%;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--white);
+  font-size: 18px;
+  font-style: var(--normal);
+  font-weight: var(--fon700);
+  line-height: 166.5%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(55, 94, 232, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(55, 94, 232, 0.4);
+  padding: 10px 25px;
+  -webkit-transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.card-news__btn:active {
+  color: var(--woodsmoke);
+  border: 2px solid var(--woodsmoke);
+}
+.card-news__text {
+  color: var(--white);
+  font-size: 20px;
+  font-style: var(--normal);
+  font-weight: var(--fon500);
+  line-height: 33px;
+  max-width: 890px;
+  max-height: 109px;
+  margin-top: 13px;
+}
+.card-news:hover .card-news__bac {
+  display: none;
+}
+.card-news:hover .card-news__btn {
+  display: none;
+}
+
+.card-mini img {
+  max-width: 95px;
+  max-height: 141px;
+}
+.card-mini__content {
+  margin-left: 13px;
+  min-width: 148px;
+}
+
+@media (max-width: 1500px) {
+  .card-news {
+    margin: 0;
+  }
+}
+@media (max-width: 1400px) {
+  .card {
+    -ms-grid-column-span: 2;
+    grid-column: 2 span;
+  }
+  .card__bac {
+    height: 280px;
+  }
+  .card__btn {
+    font-size: 14px;
+    padding: 13px 25px;
+    top: 42%;
+    left: 11%;
+  }
+  .card__link {
+    margin: 0;
+  }
+  .card__rating {
+    top: 10px;
+    min-width: 45px;
+    min-height: 25px;
+  }
+  .card__rating-text {
+    font-size: 12px;
+  }
+  .card-mini__content {
+    min-width: 0;
+  }
+  .card-news__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .card__bac {
+    height: 100px;
+  }
+  .card-mini__content {
+    min-width: 0;
+  }
+  .card-people__info {
+    bottom: 21px;
+    left: 27px;
+  }
+  .card-news__text {
+    display: none;
+  }
+}
+@media (max-width: 525px) {
+  .card__rating {
+    min-width: 37px;
+    min-height: 20px;
+  }
+}
+/*# sourceMappingURL=cards.css.map */

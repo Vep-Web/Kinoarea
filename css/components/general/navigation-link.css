@@ -1,0 +1,29 @@
+.navigation-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 135px;
+  width: 100%;
+  gap: 10px;
+  margin: 5px 0 15px;
+}
+.navigation-link__link {
+  color: #4F5B7C;
+  font-size: 16px;
+  font-style: var(--normal);
+  font-weight: var(--font500);
+  line-height: 168.7%;
+}
+.navigation-link__delimiter {
+  color: #4F5B7C;
+  font-size: 16px;
+  font-style: var(--normal);
+  font-weight: var(--font500);
+  line-height: 168.7%;
+}
+.navigation-link__link--active {
+  color: var(--white);
+}
+/*# sourceMappingURL=navigation-link.css.map */

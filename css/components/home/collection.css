@@ -1,0 +1,102 @@
+.collection {
+  padding-top: 111px;
+  padding-bottom: 22px;
+  background-color: var(--mirage-3);
+}
+.collection__list {
+  max-width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+.collection__date {
+  margin-top: 13px;
+  margin-left: -115px;
+}
+.collection__content {
+  margin-top: 45px;
+}
+.collection__list-cinema {
+  display: none;
+}
+.collection__item {
+  -ms-grid-column-span: 2;
+  grid-column: 2 span;
+}
+.collection__list-cinema--active {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+  grid-template-columns: repeat(10, 1fr);
+  gap: 50px;
+}
+.collection___tab--active {
+  color: var(--white);
+}
+
+@media (max-width: 1400px) {
+  .collection__menu {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .collection__date {
+    margin-top: 21px;
+    margin-left: 0;
+  }
+  .collection__list {
+    max-width: 1400px;
+    width: 100%;
+  }
+  .collection__content {
+    margin-top: 20px;
+  }
+  .collection__article {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: normal;
+    -ms-flex-pack: normal;
+    justify-content: normal;
+  }
+  .collection__list-cinema--active {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .collection__item {
+    -ms-grid-column-span: 1;
+    grid-column: 1 span;
+  }
+}
+@media (max-width: 800px) {
+  .collection__t2 {
+    width: 100%;
+    max-width: 320px;
+  }
+  .collection__list-cinema--active {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .collection .card-mini:last-child {
+    display: none;
+  }
+}
+@media (max-width: 525px) {
+  .collection__menu {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .collection__t2 {
+    width: 255px;
+  }
+  .collection__list {
+    display: none;
+  }
+}
+/*# sourceMappingURL=collection.css.map */

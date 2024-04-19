@@ -1,0 +1,79 @@
+.navigation-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 7px;
+  height: 73px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+.navigation-block__btn {
+  color: var(--white);
+  font-size: 25px;
+  font-style: var(--normal);
+  font-weight: var(--font600);
+  line-height: var(--normal);
+  max-width: 73px;
+  max-height: 73px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.navigation-block__btn svg {
+  fill: var(--white);
+  width: 20px;
+  height: 20px;
+}
+.navigation-block__text {
+  color: var(--white);
+  font-size: 25px;
+  font-style: var(--normal);
+  font-weight: var(--font600);
+  line-height: var(--normal);
+  max-width: 73px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .navigation-block {
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .navigation-block__btn {
+    max-width: 50px;
+    max-height: 50px;
+    font-size: 20px;
+  }
+  .navigation-block__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 525px) {
+  .navigation-block {
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .navigation-block__btn {
+    max-width: 30px;
+    max-height: 30px;
+    font-size: 15px;
+  }
+  .navigation-block__btn svg {
+    fill: var(--white);
+    width: 10px;
+    height: 10px;
+  }
+  .navigation-block__text {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=navigation-block.css.map */

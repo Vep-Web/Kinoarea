@@ -1,0 +1,92 @@
+.t2 {
+  color: var(--white);
+  font-family: Qanelas;
+  font-size: 65px;
+  font-style: var(--normal);
+  font-weight: var(--fon900);
+  line-height: var(--normal);
+}
+
+.t2-fs {
+  text-align: var(--center);
+  font-size: 50px;
+}
+
+.t3 {
+  color: var(--white);
+  font-size: 45px;
+  font-style: var(--normal);
+  font-weight: var(--fon900);
+  line-height: var(--normal);
+}
+
+.t3-fs {
+  font-size: 27px;
+}
+
+.t3-fw {
+  color: var(--white);
+  font-size: 18px;
+  font-style: var(--normal);
+  font-weight: var(--fon900);
+  line-height: var(--normal);
+}
+
+.t4 {
+  color: var(--white);
+  font-size: 20px;
+  font-style: var(--normal);
+  font-weight: var(--fon700);
+  line-height: var(--normal);
+}
+
+.t4-fs {
+  font-size: 18px;
+}
+
+@media (max-width: 1400px) {
+  .t2 {
+    font-size: 40px;
+  }
+  .t2-fs {
+    font-size: 35px;
+  }
+  .t3 {
+    font-size: 35px;
+  }
+  .t3-fw {
+    font-size: 15px;
+  }
+  .t4 {
+    font-size: 15px;
+  }
+  .t4-fs {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .t3 {
+    font-size: 30px;
+  }
+  .t3-fs {
+    font-size: 20px;
+  }
+}
+@media (max-width: 525px) {
+  .t2 {
+    font-size: 32px;
+  }
+  .t2-fs {
+    font-size: 25px;
+  }
+  .t3 {
+    font-size: 25px;
+  }
+  .t3-fs {
+    font-size: 15px;
+  }
+  .t3-fs {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=title.css.map */

@@ -1,0 +1,119 @@
+.trailers {
+  margin-top: 53px;
+}
+.trailers__link {
+  margin-top: 12px;
+  margin-right: 7px;
+}
+.trailers__content {
+  margin-top: 62px;
+}
+.trailers__video {
+  border-radius: 10px;
+  max-width: 1430px;
+  max-height: 765px;
+}
+.trailers__info {
+  margin-top: 10px;
+}
+.trailers__block {
+  row-gap: 15px;
+  -webkit-column-gap: 35px;
+  -moz-column-gap: 35px;
+  column-gap: 35px;
+}
+.trailers__list {
+  margin-top: 10px;
+  -webkit-column-gap: 28px;
+  -moz-column-gap: 28px;
+  column-gap: 28px;
+}
+.trailers__reactio {
+  gap: 10px;
+}
+.trailers .trailers__swiper-two {
+  max-height: 350px;
+}
+.trailers .trailers__swiper-two .trailers__swiper-scrollbar {
+  position: relative;
+  margin-top: 29px;
+  margin-bottom: 20px;
+  min-height: 7px;
+}
+.trailers__name {
+  margin-top: 5px;
+}
+.trailers .swiper-scrollbar-drag {
+  background-color: var(--cerulean-blue);
+}
+.trailers__block-like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.trailers__slide-link {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.trailers__slide-link:hover {
+  color: var(--lemon);
+}
+.trailers__slide-link:focus {
+  color: var(--lemon);
+}
+.trailers__slide-link:active {
+  color: var(--cerulean-blue);
+}
+.trailers__bot {
+  margin-top: 56px;
+}
+.trailers__item-video {
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+}
+
+@media (max-width: 1400px) {
+  .trailers__content {
+    margin-top: 19px;
+  }
+  .trailers__video {
+    max-height: 455px;
+  }
+  .trailers__info {
+    margin-top: 6px;
+  }
+  .trailers .trailers__swiper-two {
+    max-height: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .trailers {
+    margin-top: 43px;
+  }
+  .trailers__video {
+    max-height: 353px;
+  }
+}
+@media (max-width: 525px) {
+  .trailers__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .trailers .list-social {
+    display: none;
+  }
+  .trailers__video {
+    max-height: 222px;
+  }
+}
+/*# sourceMappingURL=trailers.css.map */

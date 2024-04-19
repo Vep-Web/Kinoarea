@@ -1,0 +1,140 @@
+.rating {
+  color: var(--white);
+  font-size: 15px;
+  font-style: var(--normal);
+  font-weight: var(--fon400);
+  line-height: var(--normal);
+}
+
+.text-decor {
+  color: var(--lemon);
+  font-size: 15px;
+  font-style: var(--normal);
+  font-weight: var(--fon500);
+  line-height: 20px; /* 133.333% */
+}
+
+.text-name {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 20px;
+  font-style: var(--normal);
+  font-weight: var(--fon600);
+  line-height: var(--normal);
+}
+
+.text-budget {
+  color: rgba(255, 255, 255, 0.41);
+  font-size: 14px;
+  font-style: var(--normal);
+  font-weight: var(--fon500);
+  line-height: var(--normal);
+}
+
+.news-decor {
+  color: var(--fiord);
+  font-size: 15px;
+  font-style: var(--normal);
+  font-weight: var(--fon600);
+  line-height: var(--normal);
+}
+
+.news-span {
+  color: var(--white);
+  font-size: 15px;
+  font-style: var(--normal);
+  font-weight: var(--fon700);
+  line-height: 191.2%; /* 28.68px */
+  position: relative;
+}
+
+.news-views::before {
+  content: url(../img/svg/eye2.svg);
+  position: absolute;
+  right: 30px;
+  top: 3px;
+}
+
+.news-comments::before {
+  content: url(../img/svg/comment1.svg);
+  position: absolute;
+  right: 22px;
+  top: 3px;
+}
+
+.numder {
+  color: var(--white);
+  font-size: 20px;
+  font-style: var(--normal);
+  font-weight: var(--fon500);
+  line-height: var(--normal);
+}
+
+.newsletter-text {
+  color: var(--white);
+  text-align: center;
+  font-size: 22px;
+  font-style: var(--normal);
+  font-weight: var(--fon500);
+  line-height: 140.2%; /* 30.844px */
+}
+
+.agreement-text {
+  color: var(--white);
+  text-align: center;
+  font-size: 17px;
+  font-style: var(--normal);
+  font-weight: var(--fon400);
+  line-height: 140.2%; /* 23.834px */
+}
+
+.text-info {
+  color: #FFF;
+  font-size: 18px;
+  font-style: var(--normal);
+  font-weight: var(--fon500);
+  line-height: 168.7%;
+}
+
+@media (max-width: 1400px) {
+  .newsletter-text {
+    font-size: 17px;
+  }
+  .link-info {
+    font-size: 13px;
+  }
+  .rating {
+    font-size: 11px;
+  }
+  .numder {
+    font-size: 17px;
+  }
+}
+@media (max-width: 800px) {
+  .news-decor {
+    font-size: 11px;
+  }
+  .text-decor {
+    font-size: 11px;
+  }
+  .text-name {
+    font-size: 15px;
+  }
+  .text-info {
+    font-size: 15px;
+  }
+}
+@media (max-width: 525px) {
+  .newsletter-text {
+    font-size: 15px;
+  }
+  .agreement-text {
+    font-size: 14px;
+  }
+  .link-info {
+    font-size: 13px;
+  }
+  .text-name {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=text.css.map */

@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Kinoarea</title>
+    <link rel="preload" href="fonts/Qanelas-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Qanelas-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Qanelas-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Qanelas-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Qanelas-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Qanelas-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Qanelas-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Qanelas-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Qanelas-SemiBoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/FontAwesome5BrandsRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+
+<body class="page__body">
+<svg style="display: none;" viewBox="0 0 129 73" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg viewBox="0 0 27 16" id="Arrow1" xmlns="http://www.w3.org/2000/svg"><path d="M26.707 8.707a1 1 0 000-1.414L20.343.929a1 1 0 10-1.414 1.414L24.586 8l-5.657 5.657a1 1 0 001.414 1.414l6.364-6.364zM0 9h26V7H0v2z"/></svg><svg viewBox="0 0 27 24" id="Arrow2" xmlns="http://www.w3.org/2000/svg"><path d="M26.06 13.06a1.5 1.5 0 000-2.12l-9.545-9.547a1.5 1.5 0 10-2.122 2.122L22.88 12l-8.486 8.485a1.5 1.5 0 102.122 2.122l9.546-9.546zM0 13.5h25v-3H0v3z"/></svg><svg viewBox="0 0 27 24" id="Arrow3" xmlns="http://www.w3.org/2000/svg"><path d="M.94 10.94a1.5 1.5 0 000 2.12l9.545 9.547a1.5 1.5 0 102.122-2.122L4.12 12l8.486-8.485a1.5 1.5 0 10-2.122-2.122L.94 10.94zM27 10.5H2v3h25v-3z"/></svg><svg viewBox="0 0 54 2" id="Line1" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h51.5"/></svg><svg viewBox="0 0 27 31" id="Polygon2" xmlns="http://www.w3.org/2000/svg"><path d="M24.83 12.017c2.711 1.53 2.711 5.436 0 6.966L5.966 29.632C3.3 31.137 0 29.21 0 26.149V4.85C0 1.79 3.3-.137 5.966 1.368L24.83 12.017z"/></svg><svg viewBox="0 0 17 3" id="Vector" xmlns="http://www.w3.org/2000/svg"><path d="M3 1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm7 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M10 1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M10 1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm7 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M17 1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M17 1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg><svg viewBox="0 0 8 6" id="Vector1" xmlns="http://www.w3.org/2000/svg"><path d="M1 3.074L2.95 5 7 1"/></svg><svg viewBox="0 0 14 11" id="bur" xmlns="http://www.w3.org/2000/svg"><path d="M0 10.389c0-.338.224-.611.5-.611h13c.276 0 .5.273.5.61 0 .338-.224.612-.5.612H.5c-.276 0-.5-.274-.5-.611zM0 5.5c0-.338.224-.611.5-.611h13c.276 0 .5.273.5.611 0 .338-.224.611-.5.611H.5c-.276 0-.5-.273-.5-.611zM0 .611C0 .274.224 0 .5 0h13c.276 0 .5.274.5.611 0 .338-.224.611-.5.611H.5c-.276 0-.5-.273-.5-.61z"/></svg><svg viewBox="0 0 24 24" id="cinema_1" xmlns="http://www.w3.org/2000/svg"><path d="M13.266 6.492a2.534 2.534 0 00-2.532-2.532 2.534 2.534 0 00-2.53 2.532 2.534 2.534 0 002.53 2.53 2.534 2.534 0 002.532-2.53zm-4.125 0c0-.88.715-1.594 1.593-1.594.88 0 1.594.715 1.594 1.594 0 .878-.715 1.593-1.594 1.593a1.596 1.596 0 01-1.593-1.593zm-2.497 6.061a2.515 2.515 0 001.258-1.473 2.514 2.514 0 00-.152-1.931A2.514 2.514 0 006.277 7.89a2.514 2.514 0 00-1.931.152 2.514 2.514 0 00-1.258 1.473 2.514 2.514 0 00.152 1.93 2.535 2.535 0 002.257 1.383 2.52 2.52 0 001.147-.276zm-1.642-.74a1.582 1.582 0 01-.927-.792 1.582 1.582 0 01-.095-1.215c.131-.405.412-.734.791-.928a1.586 1.586 0 011.216-.095c.405.131.734.412.927.792.194.379.228.81.096 1.215a1.583 1.583 0 01-.792.927c-.38.194-.81.227-1.216.096zm1.008 6.691a2.53 2.53 0 102.975-4.095 2.514 2.514 0 00-1.884-.452 2.514 2.514 0 00-1.652 1.012 2.534 2.534 0 00.56 3.535zm.198-2.984a1.583 1.583 0 011.292-.657 1.595 1.595 0 011.286 2.53 1.595 1.595 0 01-2.226.353 1.595 1.595 0 01-.352-2.226zm7.768 3.467c.516 0 1.037-.157 1.485-.483a2.534 2.534 0 00.56-3.535 2.515 2.515 0 00-1.652-1.012 2.515 2.515 0 00-1.884.452 2.514 2.514 0 00-1.012 1.652 2.529 2.529 0 002.503 2.926zm-.94-3.82c.345-.25.766-.351 1.186-.284a1.595 1.595 0 01.687 2.863 1.595 1.595 0 01-2.225-.353 1.595 1.595 0 01.352-2.226zm2.155-7.277a2.514 2.514 0 00-1.473 1.259 2.514 2.514 0 00-.152 1.93 2.514 2.514 0 001.258 1.474 2.52 2.52 0 001.931.152 2.514 2.514 0 001.473-1.258 2.513 2.513 0 00.152-1.931 2.514 2.514 0 00-1.258-1.473 2.514 2.514 0 00-1.93-.152zm1.506.988c.379.193.66.523.792.928.131.404.097.836-.096 1.215-.193.38-.523.66-.927.792a1.582 1.582 0 01-1.216-.096 1.583 1.583 0 01-.792-.927 1.583 1.583 0 01.096-1.215 1.596 1.596 0 012.143-.696zM12.342 12a1.61 1.61 0 00-1.608-1.607A1.61 1.61 0 009.127 12a1.61 1.61 0 001.607 1.607A1.61 1.61 0 0012.342 12zm-2.277 0a.67.67 0 111.34.001.67.67 0 01-1.34-.001z"/><path d="M23.863 20.707a2.788 2.788 0 00-1.985-.822c-.75 0-1.454.292-1.984.822a3.696 3.696 0 01-2.63 1.09h-2.13a10.733 10.733 0 003.19-2.207A10.664 10.664 0 0021.47 12a10.69 10.69 0 00-1.75-5.876.469.469 0 10-.784.514A9.757 9.757 0 0120.531 12c0 5.402-4.395 9.797-9.797 9.797C5.332 21.797.938 17.402.938 12c0-5.402 4.394-9.797 9.796-9.797 1.918 0 3.775.554 5.37 1.601a.469.469 0 10.515-.783 10.69 10.69 0 00-5.885-1.755 10.664 10.664 0 00-7.59 3.144A10.664 10.664 0 000 12c0 2.867 1.117 5.563 3.144 7.59a10.664 10.664 0 007.59 3.144h6.53a4.627 4.627 0 003.293-1.364 1.857 1.857 0 011.321-.547c.5 0 .969.194 1.322.547a.469.469 0 00.663-.663z"/><path d="M17.996 5.213a.472.472 0 00.469-.468.472.472 0 00-.8-.332.472.472 0 000 .663.472.472 0 00.331.137z"/></svg><svg viewBox="0 0 16 16" id="comment1" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ja)"><path d="M2.329 15.044H1.195l.802-.802c.432-.432.702-.994.775-1.604-1.128-.74-1.953-1.714-2.395-2.831-.44-1.116-.496-2.344-.16-3.553.404-1.45 1.35-2.77 2.665-3.72C4.312 1.5 6.09.955 8.027.955c2.44 0 4.496.7 5.946 2.027C15.28 4.178 16 5.789 16 7.52c0 .841-.171 1.66-.509 2.433a6.26 6.26 0 01-1.521 2.117c-1.453 1.331-3.508 2.035-5.943 2.035-.904 0-1.848-.12-2.69-.342a4.201 4.201 0 01-3.008 1.281zM8.027 1.895c-3.884 0-6.266 2.316-6.905 4.611-.604 2.17.286 4.219 2.38 5.482l.235.142-.008.273a3.698 3.698 0 01-.374 1.532 3.327 3.327 0 001.471-1.006l.199-.235.294.088a9.712 9.712 0 002.708.384c4.833 0 7.034-2.927 7.034-5.646 0-1.464-.611-2.83-1.721-3.844-1.275-1.165-3.112-1.78-5.313-1.78z"/></g><defs><clipPath id="ja"><path d="M0 0h16v16H0z"/></clipPath></defs></svg><svg viewBox="0 0 22 22" id="eye2" xmlns="http://www.w3.org/2000/svg"><path d="M21.919 11.26c-.174.252-4.337 6.157-10.92 6.157-5.647 0-10.68-5.87-10.891-6.12a.46.46 0 010-.593c.212-.25 5.244-6.12 10.892-6.12s10.68 5.87 10.892 6.12a.458.458 0 01.027.556zM10.999 5.5c-4.527 0-8.831 4.318-9.925 5.5 1.092 1.184 5.392 5.5 9.926 5.5 5.297 0 9.037-4.311 9.95-5.475C19.895 9.88 15.566 5.5 11 5.5z"/><path d="M11 14.667A3.67 3.67 0 017.335 11a3.67 3.67 0 013.667-3.667A3.67 3.67 0 0114.667 11a3.67 3.67 0 01-3.666 3.667zm0-6.417A2.753 2.753 0 008.25 11 2.753 2.753 0 0011 13.75 2.753 2.753 0 0013.75 11 2.753 2.753 0 0011 8.25z"/></svg><svg viewBox="0 0 11 19" id="fe" xmlns="http://www.w3.org/2000/svg"><path d="M9.809 10.375H7.172v7.875H3.656v-7.875H.81v-3.27h2.847v-2.46c0-.938.176-1.735.528-2.391A3.454 3.454 0 015.66.777C6.316.426 7.066.25 7.91.25c.375 0 .774.023 1.195.07.422.024.75.059.985.106l.351.035v2.777H9.035c-.656 0-1.137.176-1.441.528-.282.328-.422.738-.422 1.23v2.11H10.3l-.492 3.269z"/></svg><svg viewBox="0 0 18 18" id="goo" xmlns="http://www.w3.org/2000/svg"><path d="M17.156 9.46c0 2.485-.785 4.524-2.355 6.118-1.547 1.594-3.574 2.39-6.082 2.39-2.414 0-4.477-.843-6.188-2.53C.844 13.726 0 11.663 0 9.25c0-2.414.844-4.465 2.531-6.152C4.242 1.387 6.305.53 8.72.53c2.273 0 4.219.762 5.836 2.285L12.2 5.101a4.498 4.498 0 00-2.707-1.266c-1.031-.14-2.004-.012-2.918.387-.89.375-1.664 1.02-2.32 1.933-.633.89-.95 1.922-.95 3.094 0 1.523.528 2.824 1.583 3.902 1.054 1.079 2.332 1.618 3.832 1.618.82 0 1.547-.13 2.18-.387.656-.281 1.16-.621 1.511-1.02.375-.422.656-.832.844-1.23.21-.399.351-.774.422-1.125H8.719V7.984h8.297c.093.516.14 1.008.14 1.477z"/></svg><svg viewBox="0 0 26 27" id="like1" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#na)"><path d="M20.633 14.61h3.053a.763.763 0 00.763-.764V1.634a.763.763 0 00-.763-.763h-3.053a.763.763 0 00-.763.763v12.212c0 .421.341.763.763.763zM1.566 12.586c.135 1.184 1.24 2.023 2.432 2.023h5.95c-.505.905-.776 3.467-.764 4.513.02 1.732 1.454 3.12 3.185 3.12H13a.763.763 0 00.763-.764c0-1.765.688-4.95 1.984-6.247.872-.872 1.618-1.188 2.596-1.677V2.102C16.845 1.603 14.944.871 12.046.871H7.054c-1.645 0-2.927 1.524-2.29 3.133a2.294 2.294 0 00-1.526 3.053C1.602 7.503 1 9.524 2.135 10.793a2.285 2.285 0 00-.569 1.793z"/></g><defs><clipPath id="na"><path transform="rotate(-180 13 13.436)" d="M0 0h26v26H0z"/></clipPath></defs></svg><svg viewBox="0 0 48 48" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M24 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11S30.075 2 24 2zm0 6.947a4.052 4.052 0 110 8.105 4.052 4.052 0 010-8.105zm9.186 15.1a3.975 3.975 0 00-2.248.57c-4.15 2.5-9.726 2.5-13.875 0a4.003 4.003 0 00-5.948 4.39 3.973 3.973 0 001.82 2.464 21.163 21.163 0 004.669 2.088l-5.594 5.78a3.977 3.977 0 00-1.004 2.893 3.971 3.971 0 001.336 2.754 4.003 4.003 0 002.666 1.012 3.94 3.94 0 002.953-1.312L24 38.443l6.014 6.21a4 4 0 005.646.331c1.648-1.465 1.799-3.997.305-5.677l-5.569-5.748a21.23 21.23 0 004.67-2.09 3.969 3.969 0 001.819-2.461 3.977 3.977 0 00-.457-3.028 3.969 3.969 0 00-2.461-1.818 4.027 4.027 0 00-.781-.115z"/></svg><svg viewBox="0 0 16 17" id="search" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.813 11.276l3.944 4.208a.913.913 0 01-.024 1.266.857.857 0 01-1.234-.024l-3.974-4.24a6.505 6.505 0 01-3.834 1.241C3.001 13.727 0 10.648 0 6.864 0 3.079 3.002 0 6.691 0c3.69 0 6.691 3.08 6.691 6.864a6.94 6.94 0 01-1.57 4.412zm-.176-4.412c0-2.798-2.219-5.073-4.946-5.073S1.746 4.066 1.746 6.864c0 2.797 2.218 5.073 4.945 5.073 2.727 0 4.946-2.276 4.946-5.073z"/></svg><svg viewBox="0 0 48 48" id="tg" xmlns="http://www.w3.org/2000/svg"><path d="M5.83 23.616c12.568-5.529 28.832-12.27 31.077-13.203 5.889-2.442 7.696-1.974 6.795 3.434-.647 3.887-2.514 16.756-4.002 24.766-.883 4.75-2.864 5.313-5.979 3.258-1.498-.989-9.059-5.989-10.7-7.163-1.498-1.07-3.564-2.357-.973-4.892.922-.903 6.966-6.674 11.675-11.166.617-.59-.158-1.559-.87-1.086-6.347 4.209-15.147 10.051-16.267 10.812-1.692 1.149-3.317 1.676-6.234.838-2.204-.633-4.357-1.388-5.195-1.676-3.227-1.108-2.461-2.543.673-3.922z"/></svg><svg viewBox="0 0 18 16" id="tw" xmlns="http://www.w3.org/2000/svg"><path d="M16.137 4.594c.023.093.035.246.035.457 0 1.242-.235 2.484-.703 3.726a11.798 11.798 0 01-2.004 3.375c-.844 1.008-1.945 1.829-3.305 2.461-1.36.633-2.86.95-4.5.95-2.062 0-3.95-.551-5.66-1.653.258.024.55.035.879.035 1.71 0 3.246-.527 4.605-1.582-.82 0-1.546-.234-2.18-.703A3.813 3.813 0 012.04 9.832c.234.023.457.035.668.035.328 0 .656-.035.984-.105a3.586 3.586 0 01-1.511-.703 3.909 3.909 0 01-1.055-1.266 3.645 3.645 0 01-.387-1.652v-.07a3.475 3.475 0 001.653.492C1.289 5.813.738 4.78.738 3.469c0-.656.176-1.278.528-1.864a10.235 10.235 0 007.593 3.868 5.123 5.123 0 01-.07-.844 3.61 3.61 0 011.055-2.602c.726-.726 1.594-1.09 2.601-1.09 1.078 0 1.98.387 2.707 1.16a7.51 7.51 0 002.356-.878c-.281.867-.82 1.547-1.617 2.039A7.93 7.93 0 0018 2.66a8.113 8.113 0 01-1.863 1.934z"/></svg><svg viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M19.16 1.398c-.07.352-.351.926-.844 1.723-.468.797-.902 1.5-1.3 2.11-.399.585-.61.89-.633.914-.14.21-.211.363-.211.457 0 .093.07.257.21.492l.212.246.562.562c.211.211.446.457.703.739.258.28.493.562.703.843.235.258.434.528.598.809.188.281.317.516.387.703.164.586-.07.879-.703.879h-2.075c-.163 0-.304-.023-.421-.07a1.496 1.496 0 01-.387-.246 3.019 3.019 0 01-.387-.387 21.17 21.17 0 00-.527-.598 21.528 21.528 0 00-.703-.738c-.938-.89-1.63-1.336-2.074-1.336-.282 0-.446.082-.493.246-.046.164-.07.633-.07 1.406.023.375.035.68.035.914 0 .282-.094.493-.281.633-.188.117-.598.176-1.23.176-1.102 0-2.215-.328-3.34-.984-1.125-.657-2.11-1.594-2.954-2.813a23.07 23.07 0 01-2.003-3.2c-.516-1.077-.856-1.898-1.02-2.46C.75 1.855.668 1.457.668 1.223c0-.399.234-.598.703-.598h2.074c.258 0 .446.059.563.176.14.117.258.328.351.633.493 1.43 1.09 2.707 1.793 3.832C6.88 6.39 7.43 6.953 7.805 6.953c.14 0 .234-.047.28-.14.071-.118.106-.329.106-.633V3.12a2.819 2.819 0 00-.175-.844c-.094-.234-.188-.398-.282-.492l-.28-.351a.63.63 0 01-.106-.317.43.43 0 01.07-.246.628.628 0 01.176-.176.624.624 0 01.281-.07h3.27c.375 0 .562.258.562.773v4.079c0 .398.105.597.316.597.235 0 .563-.21.985-.633.445-.492.879-1.09 1.3-1.793.422-.703.739-1.289.95-1.757l.316-.668c.164-.399.457-.598.88-.598h2.073c.563 0 .774.258.633.773z"/></svg><svg viewBox="0 0 50 50" id="zen" xmlns="http://www.w3.org/2000/svg"><path d="M46.894 23.986h.011a.998.998 0 00.996-1.091C46.897 11.852 38.154 3.106 27.11 2.1a1 1 0 00-1.091 1.008c.174 14.676 2.11 20.673 20.875 20.878zm0 2.028c-18.765.205-20.7 6.202-20.874 20.878a1 1 0 001.091 1.008c11.044-1.006 19.787-9.751 20.79-20.795a.999.999 0 00-.262-.769 1.055 1.055 0 00-.745-.322zM22.823 2.105C11.814 3.14 3.099 11.884 2.1 22.897a.999.999 0 00.996 1.09h.012c18.703-.215 20.634-6.209 20.81-20.875a1.003 1.003 0 00-1.095-1.007zM3.107 26.013c-.311-.035-.555.113-.746.321a1.003 1.003 0 00-.262.769c.999 11.013 9.715 19.757 20.724 20.792a1.002 1.002 0 001.094-1.008c-.176-14.665-2.106-20.659-20.81-20.874z"/></svg><svg viewBox="0 0 129 31" id="Логотип" xmlns="http://www.w3.org/2000/svg"><path d="M45.65 24H41.1l-5.6-8.1V24h-4V6.5h4v7.6l5.35-7.6h4.55l-5.9 8.525L45.65 24zm1.374-14V6.5h3.75V10h-3.75zm0 14V11.5h3.75V24h-3.75zM60.52 11.15c1.183 0 2.141.442 2.875 1.325.75.867 1.125 2.067 1.125 3.6V24h-3.75v-7.6c0-.6-.159-1.05-.475-1.35-.3-.3-.7-.45-1.2-.45-1.217 0-1.825.7-1.825 2.1V24h-3.75V11.5h3.75v1.15c.65-1 1.733-1.5 3.25-1.5zm17.127 11.3c-1.283 1.267-2.85 1.9-4.7 1.9s-3.416-.633-4.7-1.9c-1.283-1.283-1.925-2.85-1.925-4.7s.642-3.408 1.925-4.675c1.284-1.283 2.85-1.925 4.7-1.925s3.417.642 4.7 1.925c1.284 1.267 1.925 2.825 1.925 4.675 0 1.85-.641 3.417-1.925 4.7zm-6.75-2.575c.55.55 1.234.825 2.05.825.817 0 1.5-.275 2.05-.825.55-.55.825-1.258.825-2.125s-.275-1.575-.825-2.125c-.55-.55-1.233-.825-2.05-.825-.816 0-1.5.275-2.05.825-.55.55-.825 1.258-.825 2.125s.275 1.575.825 2.125zM83.167 12.4c1-.833 2.234-1.25 3.7-1.25 1.467 0 2.7.433 3.7 1.3 1 .85 1.5 2.075 1.5 3.675V24h-3.65v-.975c-.766.883-1.841 1.325-3.225 1.325-1.166 0-2.15-.342-2.95-1.025-.783-.683-1.175-1.642-1.175-2.875s.392-2.192 1.175-2.875c.8-.683 1.784-1.025 2.95-1.025 1.3 0 2.375.317 3.225.95v-1.125c0-1.183-.516-1.775-1.55-1.775-.5 0-.883.117-1.15.35-.266.233-.4.542-.4.925h-3.65c0-1.483.5-2.642 1.5-3.475zm3.35 9.3c.6 0 1.067-.117 1.4-.35.334-.233.5-.533.5-.9 0-.383-.166-.683-.5-.9-.333-.233-.8-.35-1.4-.35-.55 0-.975.117-1.275.35-.283.217-.425.517-.425.9s.142.692.425.925c.3.217.725.325 1.275.325zm11.718-8.225c.2-.717.592-1.267 1.175-1.65.584-.383 1.275-.575 2.075-.575v4.25c-.866-.133-1.625.008-2.275.425-.65.417-.975 1.142-.975 2.175V24h-3.75V11.5h3.75v1.975zm7.924 5.775c.417 1.383 1.392 2.075 2.925 2.075.45 0 .875-.083 1.275-.25.4-.183.692-.417.875-.7l3.65-.025c-.4 1.3-1.116 2.292-2.15 2.975-1.033.683-2.266 1.025-3.7 1.025-2.033 0-3.675-.625-4.925-1.875s-1.875-2.825-1.875-4.725c0-1.883.625-3.45 1.875-4.7 1.267-1.267 2.875-1.9 4.825-1.9 1.817 0 3.317.625 4.5 1.875 1.2 1.25 1.8 2.825 1.8 4.725 0 .533-.05 1.033-.15 1.5h-8.925zm-.025-2.85h5.375c-.366-1.283-1.233-1.925-2.6-1.925-1.433 0-2.358.642-2.775 1.925zm12.654-4c1-.833 2.233-1.25 3.7-1.25 1.466 0 2.7.433 3.7 1.3 1 .85 1.5 2.075 1.5 3.675V24h-3.65v-.975c-.767.883-1.842 1.325-3.225 1.325-1.167 0-2.15-.342-2.95-1.025-.784-.683-1.175-1.642-1.175-2.875s.391-2.192 1.175-2.875c.8-.683 1.783-1.025 2.95-1.025 1.3 0 2.375.317 3.225.95v-1.125c0-1.183-.517-1.775-1.55-1.775-.5 0-.884.117-1.15.35-.267.233-.4.542-.4.925h-3.65c0-1.483.5-2.642 1.5-3.475zm3.35 9.3c.6 0 1.066-.117 1.4-.35.333-.233.5-.533.5-.9 0-.383-.167-.683-.5-.9-.334-.233-.8-.35-1.4-.35-.55 0-.975.117-1.275.35-.284.217-.425.517-.425.9s.141.692.425.925c.3.217.725.325 1.275.325zM13.266 9.492a2.534 2.534 0 00-2.532-2.532 2.534 2.534 0 00-2.53 2.532 2.534 2.534 0 002.53 2.53 2.534 2.534 0 002.532-2.53zm-4.125 0c0-.88.715-1.594 1.593-1.594.88 0 1.594.715 1.594 1.594 0 .878-.715 1.593-1.594 1.593a1.596 1.596 0 01-1.593-1.593zm-2.497 6.06a2.514 2.514 0 001.258-1.472 2.514 2.514 0 00-.152-1.931 2.514 2.514 0 00-1.473-1.258 2.513 2.513 0 00-1.931.152 2.515 2.515 0 00-1.258 1.473 2.514 2.514 0 00.152 1.93 2.538 2.538 0 002.257 1.383c.394 0 .786-.093 1.147-.277zm-1.642-.74a1.583 1.583 0 01-.927-.791 1.583 1.583 0 01-.095-1.216c.131-.404.412-.734.791-.927a1.587 1.587 0 011.216-.096c.405.132.734.413.927.792.194.38.228.811.096 1.216a1.583 1.583 0 01-.792.927c-.38.193-.81.227-1.216.096zm1.008 6.692a2.53 2.53 0 102.975-4.095 2.514 2.514 0 00-1.884-.452 2.514 2.514 0 00-1.652 1.012 2.534 2.534 0 00.56 3.535zm.198-2.984a1.583 1.583 0 011.292-.657 1.595 1.595 0 011.286 2.53 1.595 1.595 0 01-2.226.353 1.595 1.595 0 01-.352-2.226zm7.768 3.467c.516 0 1.037-.157 1.485-.483a2.534 2.534 0 00.56-3.535 2.515 2.515 0 00-1.652-1.013 2.515 2.515 0 00-1.884.453 2.514 2.514 0 00-1.012 1.652 2.529 2.529 0 002.503 2.926zm-.94-3.82c.345-.25.766-.351 1.186-.285a1.595 1.595 0 01.687 2.863c-.71.517-1.709.36-2.225-.352a1.595 1.595 0 01.352-2.226zm2.155-7.277a2.514 2.514 0 00-1.473 1.259 2.515 2.515 0 00-.152 1.93 2.515 2.515 0 001.258 1.473 2.52 2.52 0 001.931.152 2.514 2.514 0 001.473-1.258 2.511 2.511 0 00.152-1.93 2.514 2.514 0 00-1.258-1.473 2.514 2.514 0 00-1.93-.152zm1.506.988c.379.193.66.522.792.927.131.405.097.837-.096 1.216s-.523.66-.927.792a1.583 1.583 0 01-1.216-.096 1.583 1.583 0 01-.792-.927 1.583 1.583 0 01.096-1.216 1.595 1.595 0 012.143-.696zM12.342 15a1.61 1.61 0 00-1.608-1.607A1.61 1.61 0 009.127 15a1.61 1.61 0 001.607 1.608A1.61 1.61 0 0012.342 15zm-2.277 0a.67.67 0 111.34.001.67.67 0 01-1.34-.001z"/><path d="M23.863 23.707a2.788 2.788 0 00-1.985-.822c-.75 0-1.454.292-1.984.822a3.696 3.696 0 01-2.63 1.09h-2.13a10.733 10.733 0 003.19-2.207A10.664 10.664 0 0021.47 15a10.69 10.69 0 00-1.75-5.876.469.469 0 10-.784.514A9.756 9.756 0 0120.531 15c0 5.402-4.395 9.797-9.797 9.797C5.332 24.797.938 20.402.938 15c0-5.402 4.394-9.797 9.796-9.797 1.918 0 3.775.554 5.37 1.601a.469.469 0 10.515-.783 10.69 10.69 0 00-5.885-1.755 10.664 10.664 0 00-7.59 3.144A10.664 10.664 0 000 15c0 2.867 1.117 5.563 3.144 7.59a10.664 10.664 0 007.59 3.144h6.53a4.627 4.627 0 003.293-1.364 1.857 1.857 0 011.321-.547c.5 0 .969.194 1.322.547a.469.469 0 00.663-.663z"/><path d="M17.996 8.213a.472.472 0 00.469-.468.472.472 0 00-.8-.332.472.472 0 000 .663.472.472 0 00.331.137z"/></svg><svg viewBox="0 0 73 73" id="Наверх" xmlns="http://www.w3.org/2000/svg"><rect y="73" width="73" height="73" rx="10" transform="rotate(-90 0 73)"/><path d="M37.207 21.664a1 1 0 00-1.414 0l-6.364 6.363a1 1 0 001.414 1.415l5.657-5.657 5.657 5.657a1 1 0 101.414-1.415l-6.364-6.363zm.293 30.142V22.371h-2v29.435h2z"/></svg></svg>
+
+  <div class="site-container">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__block block-logo">
+          <a href="#" class="header__logo">
+            <img src="./img/Логотип.webp" alt="Логотип">
+          </a>
+          <ul class="header__list list-social">
+            <li class="header__item">
+              <a href="https://vk.com/" class="header__link">
+                <svg class="social-svg">
+                  <use xlink:href="#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="https://dzen.ru/" class="header__link">
+                <svg class="social-svg">
+                  <use xlink:href="#zen"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="https://ok.ru/" class="header__link">
+                <svg class="social-svg">
+                  <use xlink:href="#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="https://web.telegram.org/" class="header__link">
+                <svg class="social-svg">
+                  <use xlink:href="#tg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list list-links">
+            <li class="header__item">
+              <a href="./selections.html" class="header__link link">Афиша</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link link">Медиа</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link link">Фильмы</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link link">Актёры</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link link">Новости</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link link">Подборки</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link link">Категории</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__block block-btn">
+          <button class="header__btn btn-reset btn btn-search" aria-label="Поиска">
+            <svg class="search-svg">
+              <use xlink:href="#search"></use>
+            </svg>
+          </button>
+          <div class="header__block-btn">
+            <button class="header__btn btn-reset btn">Войти</button>
+          </div>
+          <div class="header__block-user d-flex">
+            <a href="#" class="header__user-link link-user">Евгений</a>
+            <a href="#" class="header__user-link">
+              <picture class="header__picture">
+                <source srcset="./img/user.webp">
+                <img src="./img/user.png" alt="Постер фильма {{}}">
+              </picture>
+            </a>
+          </div>
+        </div>
+
+        <button class="header__burger-btn btn btn-reset burger-btn" id="burger" aria-label="Дополнительного меню">
+          <span class="burger-btn__span"></span>
+          <span class="burger-btn__span"></span>
+          <span class="burger-btn__span"></span>
+        </button>
+
+      </div>
+
+      <div class="header__burger-menu burger-menu">
+        <button class="burger-menu__close btn-close btn-reset" id="close" aria-label="Выхода из дополнительного меню">
+          <span class="btn-close__span"></span>
+          <span class="btn-close__span"></span>
+        </button>
+        <nav class="burger-menu__nav">
+          <ul class="burger-menu__list">
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__logo">
+                <img src="./img/Логотип.webp" alt="Логотип">
+              </a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="./selections.html" class="burger-menu__link link">Афиша</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link link">Медиа</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link link">Фильмы</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link link">Актёры</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link link">Новости</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link link">Подборки</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link link">Категории</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+    <button class="button-top btn-reset">
+      <svg class="social-svg">
+        <use xlink:href="#Arrow1"></use>
+      </svg>
+    </button>
+
+    <section class="now section">
+      <h2 class="d-none">Kinoarea</h2>
+      <div class="now__background"></div>
+      <div class="container">
+        <div class="now__menu d-flex">
+          <div class="now__title">
+            <h2 class="now__t2 t2">Сейчас в кино</h2>
+          </div>
+          <div class="now__decor decor"></div>
+          <ul class="now__list genre">
+            <li class="genre__item"><a href="/s.html" class="genre__link link">Все </a></li>
+            <li class="genre__item"><a href="#" class="genre__link link link-color">Боевики </a></li>
+            <li class="genre__item"><a href="#" class="genre__link link link-color">Приключения</a></li>
+            <li class="genre__item"><a href="#" class="genre__link link link-color">Комедии</a></li>
+            <li class="genre__item"><a href="#" class="genre__link link link-color">Фантастика</a></li>
+            <li class="genre__item"><a href="#" class="genre__link link link-color">Триллеры</a></li>
+            <li class="genre__item"><a href="#" class="genre__link link link-color">Драма</a></li>
+          </ul>
+        </div>
+
+        <div class="now__cinema cinema">
+          <ul class="cinema__list d-grid">
+            <li class="cinema__item card">
+              <article class="card__article">
+                <div class="card__rating">
+                  <p class="card__rating-text">6.70</p>
+                </div>
+                <picture class="card__picture">
+                  <source srcset="./img/poster.webp">
+                  <img src="./img/poster.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <a href="#" class="card__link-category link-category">Триллер</a>
+              </article>
+            </li>
+            <li class="cinema__item card">
+              <article class="card__article">
+                <div class="card__rating">
+                  <p class="card__rating-text">6.70</p>
+                </div>
+                <picture class="card__picture">
+                  <source srcset="./img/poster.webp">
+                  <img src="./img/poster.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <a href="#" class="card__link-category link-category">Триллер</a>
+              </article>
+            </li>
+            <li class="cinema__item card">
+              <article class="card__article">
+                <div class="card__rating rating-low">
+                  <p class="card__rating-text">6.70</p>
+                </div>
+                <picture class="card__picture">
+                  <source srcset="./img/poster.webp">
+                  <img src="./img/poster.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <a href="#" class="card__link-category link-category">Триллер</a>
+              </article>
+            </li>
+            <li class="cinema__item card">
+              <article class="card__article">
+                <div class="card__rating rating-norm">
+                  <p class="card__rating-text">6.70</p>
+                </div>
+                <picture class="card__picture">
+                  <source srcset="./img/poster.webp">
+                  <img src="./img/poster.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <a href="#" class="card__link-category link-category">Триллер</a>
+              </article>
+            </li>
+
+            <li class="cinema__item card">
+              <article class="card__article">
+                <div class="card__rating">
+                  <p class="card__rating-text">6.70</p>
+                </div>
+                <picture class="card__picture">
+                  <source srcset="./img/poster.webp">
+                  <img src="./img/poster.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <a href="#" class="card__link-category link-category">Триллер</a>
+              </article>
+            </li>
+            <li class="cinema__item card">
+              <article class="card__article">
+                <div class="card__rating">
+                  <p class="card__rating-text">6.70</p>
+                </div>
+                <picture class="card__picture">
+                  <source srcset="./img/poster.webp">
+                  <img src="./img/poster.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <a href="#" class="card__link-category link-category">Триллер</a>
+              </article>
+            </li>
+            <li class="cinema__item card">
+              <article class="card__article">
+                <div class="card__rating">
+                  <p class="card__rating-text">6.70</p>
+                </div>
+                <picture class="card__picture">
+                  <source srcset="./img/poster.webp">
+                  <img src="./img/poster.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории Побег из Претории Поб</a>
+                <a href="#" class="card__link-category link-category">Триллер</a>
+              </article>
+            </li>
+            <li class="cinema__item card">
+              <article class="card__article">
+                <div class="card__rating">
+                  <p class="card__rating-text">6.70</p>
+                </div>
+                <picture class="card__picture">
+                  <source srcset="./img/poster.webp">
+                  <img src="./img/poster.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <a href="#" class="card__link-category link-category">Триллер</a>
+              </article>
+            </li>
+
+            <li class="cinema__item card">
+              <article class="card__article">
+                <div class="card__rating">
+                  <p class="card__rating-text">6.70</p>
+                </div>
+                <picture class="card__picture">
+                  <source srcset="./img/poster.webp">
+                  <img src="./img/poster.png" alt="Постер фильма {{}}">
+                </picture>
+                <h3 class="card__title"><a href="#" class="card__link-cinem t4 t4-fs">Побег изssssss Претории</a></h3>
+                <a href="#" class="card__link-category link-category">Триллер</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+
+        <div class="now__block-btn">
+          <button href="#" class="btn-reset btn-transparent">Все новинки</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="trailers section">
+      <div class="container">
+        <div class="trailers__menu d-flex">
+          <h1 class="trailers__t2 t2">Новые трейлеры</h1>
+          <a href="#" class="trailers__link link link-next">Все трейлеры</a>
+        </div>
+
+        <div class="trailers__content">
+          <div class="trailers__swiper-one swiper ">
+            <div class="trailers__swiper-wrapper swiper-wrapper">
+              <div class="trailers__slide-big swiper-slide">
+                <div class="trailers__block-video">
+                  <video class="trailers__video" controls="controls" poster="./img/image3.png">
+                    <source src="video/1.mp4" type='video/mp4; codecs="avim1.42E01E, mp4a.40.2"'>
+                  </video>
+                </div>
+                <div class="trailers__info d-flex">
+                  <div class="trailers__block d-flex">
+                    <h3 class="trailers__title"><a href='#' class="trailers__slide-link t3">Форсаж 9</a></h3>
+                    <ul class="trailers__list list-social d-flex">
+                      <li class="trailers__item">
+                        <a href="https://vk.com/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://dzen.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#zen"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://ok.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#ok"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://web.telegram.org/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#tg"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="trailers__reactio d-flex">
+                    <div class="trailers__block-like">
+                      <button aria-label="Понравилось" class="trailers__like btn-reset btn-reactio">
+                        <svg class="like-svg like-transform">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">3 245</span>
+                    </div>
+
+                    <div class="trailers__block-like">
+                      <button aria-label="Не понравилось" class="trailers__dislike btn-reset btn-reactio">
+                        <svg class="like-svg">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">420</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trailers__slide-big swiper-slide">
+                <div class="trailers__block-video">
+                  <video class="trailers__ trailers__video" width="1430" height="765" controls="controls" poster="./img/w4.png">
+                    <source src="video/1.mp4" type='video/mp4; codecs="avim1.42E01E, mp4a.40.2"'>
+                  </video>
+                </div>
+                <div class="trailers__info d-flex">
+                  <div class="trailers__block d-flex">
+                    <h3 class="trailers__title"><a href='#' class="trailers__slide-link t3">Форсаж 9</a></h3>
+                    <ul class="trailers__list list-social d-flex">
+                      <li class="trailers__item">
+                        <a href="https://vk.com/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://dzen.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#zen"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://ok.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#ok"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://web.telegram.org/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#tg"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="trailers__reactio d-flex">
+                    <div class="trailers__block-like">
+                      <button aria-label="Понравилось" class="trailers__like btn-reset btn-reactio">
+                        <svg class="like-svg like-transform">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">3 245</span>
+                    </div>
+
+                    <div class="trailers__block-like">
+                      <button aria-label="Не понравилось" class="trailers__dislike btn-reset btn-reactio">
+                        <svg class="like-svg">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">420</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trailers__slide-big swiper-slide">
+                <div class="trailers__block-video">
+                  <video class="trailers__ trailers__video" width="1430" height="765" controls="controls" poster="./img/w4.png">
+                    <source src="video/1.mp4" type='video/mp4; codecs="avim1.42E01E, mp4a.40.2"'>
+                  </video>
+                </div>
+                <div class="trailers__info d-flex">
+                  <div class="trailers__block d-flex">
+                    <h3 class="trailers__title"><a href='#' class="trailers__slide-link t3">Форсаж 9</a></h3>
+                    <ul class="trailers__list list-social d-flex">
+                      <li class="trailers__item">
+                        <a href="https://vk.com/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://dzen.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#zen"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://ok.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#ok"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://web.telegram.org/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#tg"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="trailers__reactio d-flex">
+                    <div class="trailers__block-like">
+                      <button aria-label="Понравилось" class="trailers__like btn-reset btn-reactio">
+                        <svg class="like-svg like-transform">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">3 245</span>
+                    </div>
+
+                    <div class="trailers__block-like">
+                      <button aria-label="Не понравилось" class="trailers__dislike btn-reset btn-reactio">
+                        <svg class="like-svg">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">420</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trailers__slide-big swiper-slide">
+                <div class="trailers__block-video">
+                  <video class="trailers__ trailers__video" width="1430" height="765" controls="controls" poster="./img/w4.png">
+                    <source src="video/1.mp4" type='video/mp4; codecs="avim1.42E01E, mp4a.40.2"'>
+                  </video>
+                </div>
+                <div class="trailers__info d-flex">
+                  <div class="trailers__block d-flex">
+                    <h3 class="trailers__title"><a href='#' class="trailers__slide-link t3">Форсаж 9</a></h3>
+                    <ul class="trailers__list list-social d-flex">
+                      <li class="trailers__item">
+                        <a href="https://vk.com/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://dzen.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#zen"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://ok.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#ok"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://web.telegram.org/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#tg"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="trailers__reactio d-flex">
+                    <div class="trailers__block-like">
+                      <button aria-label="Понравилось" class="trailers__like btn-reset btn-reactio">
+                        <svg class="like-svg like-transform">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">3 245</span>
+                    </div>
+
+                    <div class="trailers__block-like">
+                      <button aria-label="Не понравилось" class="trailers__dislike btn-reset btn-reactio">
+                        <svg class="like-svg">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">420</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trailers__slide-big swiper-slide">
+                <div class="trailers__block-video">
+                  <video class="trailers__ trailers__video" width="1430" height="765" controls="controls" poster="./img/w4.png">
+                    <source src="video/1.mp4" type='video/mp4; codecs="avim1.42E01E, mp4a.40.2"'>
+                  </video>
+                </div>
+                <div class="trailers__info d-flex">
+                  <div class="trailers__block d-flex">
+                    <h3 class="trailers__title"><a href='#' class="trailers__slide-link t3">Форсаж 9</a></h3>
+                    <ul class="trailers__list list-social d-flex">
+                      <li class="trailers__item">
+                        <a href="https://vk.com/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://dzen.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#zen"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://ok.ru/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#ok"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="trailers__item">
+                        <a href="https://web.telegram.org/" class="trailers__link-social">
+                          <svg class="social-svg">
+                            <use xlink:href="#tg"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="trailers__reactio d-flex">
+                    <div class="trailers__block-like">
+                      <button aria-label="Понравилось" class="trailers__like btn-reset btn-reactio">
+                        <svg class="like-svg like-transform">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">3 245</span>
+                    </div>
+
+                    <div class="trailers__block-like">
+                      <button aria-label="Не понравилось" class="trailers__dislike btn-reset btn-reactio">
+                        <svg class="like-svg">
+                          <use xlink:href="#like1"></use>
+                        </svg>
+                      </button>
+                      <span class="trailers__rating rating">420</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trailers__swiper-two swiper">
+            <div class="trailers__swiper-scrollbar swiper-scrollbar"></div>
+            <div class="trailers__swiper-wrapper swiper-wrapper">
+              <div class="trailers__slide-min swiper-slide card">
+                <picture class="card__picture">
+                  <source srcset="./img/w4.webp">
+                  <img src="./img/w4.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card__bac-none bac-min"><button aria-label="Включить трейлер" class="btn-play"></button></div>
+                <div class="trailers__name">
+                  <h4><a href="#" class="trailers__slide-link t4">Мулан</a></h4>
+                </div>
+              </div>
+              <div class="trailers__slide-min swiper-slide card">
+                <picture class="card__picture">
+                  <source srcset="./img/w3.webp">
+                  <img src="./img/w3.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card__bac-none bac-min"><button aria-label="Включить трейлер" class="btn-play"></button></div>
+                <div class="trailers__name">
+                  <h4><a href="#" class="trailers__slide-link t4">Мулан</a></h4>
+                </div>
+              </div>
+              <div class="trailers__slide-min swiper-slide card">
+                <picture class="card__picture">
+                  <source srcset="./img/w2.webp">
+                  <img src="./img/w2.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card__bac-none bac-min"><button aria-label="Включить трейлер" class="btn-play"></button></div>
+                <div class="trailers__name">
+                  <h4><a href="#" class="trailers__slide-link t4">Мулан</a></h4>
+                </div>
+              </div>
+              <div class="trailers__slide-min swiper-slide card">
+                <picture class="card__picture">
+                  <source srcset="./img/w1.webp">
+                  <img src="./img/w1.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card__bac-none bac-min"><button aria-label="Включить трейлер" class="btn-play"></button></div>
+                <div class="trailers__name">
+                  <h4><a href="#" class="trailers__slide-link t4">Мулан</a></h4>
+                </div>
+              </div>
+              <div class="trailers__slide-min swiper-slide card">
+                <picture class="card__picture">
+                  <source srcset="./img/w4.webp">
+                  <img src="./img/w4.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card__bac-none bac-min"><button aria-label="Включить трейлер" class="btn-play"></button></div>
+                <div class="trailers__name">
+                  <h4><a href="#" class="trailers__slide-link t4">Мулан</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular section" id="popular">
+      <div class="container">
+        <div class="popular__menu d-flex">
+          <div class="popular__title">
+            <h2 class="popular__t2 t2">Популярные фильмы</h2>
+          </div>
+          <div class="popular__decor decor"></div>
+          <ul class="popular__list genre">
+            <li class="popular__item"><button aria-label="Навигации по категориям" data-tab="#PopularTab1" class="popular___tab btn-reset tab-state link-color">Всё время </button></li>
+            <li class="popular__item"><button aria-label="Навигации по категориям" data-tab="#PopularTab2" class="popular___tab btn-reset tab-state link-color">2023 </button></li>
+            <li class="popular__item"><button aria-label="Навигации по категориям" data-tab="#PopularTab3" class="popular___tab btn-reset tab-state link-color">2022</button></li>
+            <li class="popular__item"><button aria-label="Навигации по категориям" data-tab="#PopularTab4" class="popular___tab btn-reset tab-state link-color">2021</button></li>
+            <li class="popular__item"><button aria-label="Навигации по категориям" data-tab="#PopularTab5" class="popular___tab btn-reset tab-state link-color">2020</button></li>
+            <li class="popular__item"><button aria-label="Навигации по категориям" data-tab="#PopularTab6" class="popular___tab btn-reset tab-state link-color activ-tabs">2019</button></li>
+            <li class="popular__item"><button aria-label="Навигации по категориям" data-tab="#PopularTab7" class="popular___tab btn-reset tab-state link-color">2018</button></li>
+          </ul>
+        </div>
+
+        <div class="popular__content">
+          <!--PopularTab1-->
+          <div class="popular__tab-content tab-content" id="PopularTab1">
+            <div class="swiper popular__swiper-one">
+              <ul class="popular__swiper-wrapper swiper-wrapper">
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im1.webp">
+                      <img src="./img/im1.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im1.webp">
+                      <img src="./img/im1.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im1.webp">
+                      <img src="./img/im1.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im1.webp">
+                      <img src="./img/im1.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im1.webp">
+                      <img src="./img/im1.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="popular__navigation">
+              <div class="popular__swiper-button-prev prew-one swiper-button-prev navigation-prew"></div>
+              <div class="popular__swiper-pagination pagination-one swiper-pagination"></div>
+              <div class="popular__swiper-button-next next-one swiper-button-next navigation-next"></div>
+            </div>
+          </div>
+
+          <!--PopularTab2-->
+          <div class="popular__tab-content tab-content" id="PopularTab2">
+            <div class="swiper popular__swiper-two">
+              <ul class="popular__swiper-wrapper swiper-wrapper">
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im3.webp">
+                      <img src="./img/im3.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im3.webp">
+                      <img src="./img/im3.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im3.webp">
+                      <img src="./img/im3.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im3.webp">
+                      <img src="./img/im3.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/im3.webp">
+                      <img src="./img/im3.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="popular__navigation">
+              <div class="popular__swiper-button-prev prew-two swiper-button-prev navigation-prew"></div>
+              <div class="popular__swiper-pagination pagination-two swiper-pagination"></div>
+              <div class="popular__swiper-button-next next-two swiper-button-next navigation-next"></div>
+            </div>
+          </div>
+
+          <!--PopularTab3-->
+          <div class="popular__tab-content tab-content" id="PopularTab3">
+            <div class="swiper popular__swiper-three" >
+              <ul class="popular__swiper-wrapper swiper-wrapper">
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/с2.webp">
+                      <img src="./img/с2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/с2.webp">
+                      <img src="./img/с2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/с2.webp">
+                      <img src="./img/с2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/с2.webp">
+                      <img src="./img/с2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/с2.webp">
+                      <img src="./img/с2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="popular__navigation">
+              <div class="popular__swiper-button-prev prew-three swiper-button-prev navigation-prew"></div>
+              <div class="popular__swiper-pagination pagination-three swiper-pagination"></div>
+              <div class="popular__swiper-button-next next-three swiper-button-next navigation-next"></div>
+            </div>
+          </div>
+
+          <!--PopularTab4-->
+          <div class="popular__tab-content tab-content" id="PopularTab4">
+            <div class="swiper popular__swiper-four">
+              <ul class="popular__swiper-wrapper swiper-wrapper">
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="popular__navigation">
+              <div class="popular__swiper-button-prev prew-four swiper-button-prev navigation-prew"></div>
+              <div class="popular__swiper-pagination pagination-four swiper-pagination"></div>
+              <div class="popular__swiper-button-next next-four swiper-button-next navigation-next"></div>
+            </div>
+          </div>
+
+          <!--PopularTab5-->
+          <div class="popular__tab-content tab-content" id="PopularTab5">
+            <div class="swiper popular__swiper-five">
+              <ul class="popular__swiper-wrapper swiper-wrapper">
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="popular__navigation">
+              <div class="popular__swiper-button-prev prew-five swiper-button-prev navigation-prew"></div>
+              <div class="popular__swiper-pagination pagination-five swiper-pagination"></div>
+              <div class="popular__swiper-button-next next-five swiper-button-next navigation-next"></div>
+            </div>
+          </div>
+
+          <!--PopularTab6-->
+          <div class="popular__tab-content tab-content active-tab" id="PopularTab6">
+            <div class="swiper popular__swiper-six">
+              <ul class="popular__swiper-wrapper swiper-wrapper">
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="popular__navigation">
+              <div class="popular__swiper-button-prev prew-six swiper-button-prev navigation-prew"></div>
+              <div class="popular__swiper-pagination pagination-six swiper-pagination"></div>
+              <div class="popular__swiper-button-next next-six swiper-button-next navigation-next"></div>
+            </div>
+          </div>
+
+          <!--PopularTab7-->
+          <div class="popular__tab-content tab-content" id="PopularTab7">
+            <div class="swiper popular__swiper-seven">
+              <ul class="popular__swiper-wrapper swiper-wrapper">
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+                <li class="popular__swiper-slide swiper-slide card">
+                  <article class="card__article">
+                    <div class="card__rating">
+                      <p class="card__rating-text">6.70</p>
+                    </div>
+                    <picture class="card__picture">
+                      <source srcset="./img/image2.webp">
+                      <img src="./img/image2.png" alt="Постер фильма {{}}">
+                    </picture>
+                    <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                    <a href="#" class="card__link-category link-category">Триллер</a>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="popular__navigation">
+              <div class="popular__swiper-button-prev prew-seven swiper-button-prev navigation-prew"></div>
+              <div class="popular__swiper-pagination pagination-seven swiper-pagination"></div>
+              <div class="popular__swiper-button-next next-seven swiper-button-next navigation-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="persons section">
+      <div class="container">
+        <div class="persons__menu d-flex">
+          <div class="persons__title">
+            <h2 class="persons__t2 t2">Популярные персоны</h2>
+          </div>
+          <div class="persons__decor decor"></div>
+          <ul class="persons__list genre">
+            <li class="persons__item"><button aria-label="Навигации по категориям" data-tab="#PersonsTab1" class="persons___tab btn-reset tab-state link-color">За год</button></li>
+            <li class="persons__item"><button aria-label="Навигации по категориям" data-tab="#PersonsTab2" class="persons___tab btn-reset tab-state link-color">За месяц</button></li>
+            <li class="persons__item"><button aria-label="Навигации по категориям" data-tab="#PersonsTab3" class="persons___tab btn-reset tab-state link-color activ-tabs">За неделю</button></li>
+          </ul>
+        </div>
+
+        <div class="persons__content">
+          <!--tab1-->
+          <div class="persons__tab" id="PersonsTab1">
+            <ul class="persons__list-people">
+              <li class="persons__item-people card-people">
+                <article class="card-people__article">
+                  <picture class="card-people__picture">
+                    <source srcset="./img/image26(1).webp">
+                    <img src="./img/image26(1).png" alt="Постер фильма {{}}">
+                  </picture>
+                  <div class="card-people__position">
+                    <span class="card-people__span text-decor">1-е место</span>
+                  </div>
+                  <div class="card-people__info">
+                    <a href="#" class="card-people__link t3 t3-fs">Квентин Тарантино</a>
+                    <p class="card-people__text text-name">Quentin Tarantino</p>
+                    <p class="card-people__age text-decor">57 лет</p>
+                  </div>
+                </article>
+              </li>
+              <li class="persons__item-people card-people">
+                <article class="card-people__article">
+                  <picture class="card-people__picture">
+                    <source srcset="./img/image26(1).webp">
+                    <img src="./img/image26(1).png" alt="Постер фильма {{}}">
+                  </picture>
+                  <div class="card-people__position">
+                    <span class="card-people__span text-decor">2-е место</span>
+                  </div>
+                  <div class="card-people__info">
+                    <a href="#" class="card-people__link t3 t3-fs">Джейсон Стейтем</a>
+                    <p class="card-people__text text-name">Jason Statham</p>
+                    <p class="card-people__age text-decor">52 лет</p>
+                  </div>
+                </article>
+              </li>
+              <li class="persons__item-people">
+                <ul class="persons__list-table">
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+          <!--tab2-->
+          <div class="persons__tab" id="PersonsTab2">
+            <ul class="persons__list-people">
+              <li class="persons__item-people card-people">
+                <article class="card-people__article">
+                  <picture class="card-people__picture">
+                    <source srcset="./img/image26.webp">
+                    <img src="./img/image26.png" alt="Постер фильма {{}}">
+                  </picture>
+                  <div class="card-people__position">
+                    <span class="card-people__span text-decor">1-е место</span>
+                  </div>
+                  <div class="card-people__info">
+                    <a href="#" class="card-people__link t3 t3-fs">Квентин Тарантино</a>
+                    <p class="card-people__text text-name">Quentin Tarantino</p>
+                    <p class="card-people__age text-decor">57 лет</p>
+                  </div>
+                </article>
+              </li>
+              <li class="persons__item-people card-people">
+                <article class="card-people__article">
+                  <picture class="card-people__picture">
+                    <source srcset="./img/image26.webp">
+                    <img src="./img/image26.png" alt="Постер фильма {{}}">
+                  </picture>
+                  <div class="card-people__position">
+                    <span class="card-people__span text-decor">2-е место</span>
+                  </div>
+                  <div class="card-people__info">
+                    <a href="#" class="card-people__link t3 t3-fs">Джейсон Стейтем</a>
+                    <p class="card-people__text text-name">Jason Statham</p>
+                    <p class="card-people__age text-decor">52 лет</p>
+                  </div>
+                </article>
+              </li>
+              <li class="persons__item-people">
+                <ul class="persons__list-table">
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+          <!--tab3-->
+          <div class="persons__tab persons__tab--active" id="PersonsTab3">
+            <ul class="persons__list-people">
+              <li class="persons__item-people card-people">
+                <article class="card-people__article">
+                  <picture class="card-people__picture">
+                    <source srcset="./img/image26(1).webp">
+                    <img src="./img/image26(1).png" alt="Постер фильма {{}}">
+                  </picture>
+                  <div class="card-people__position">
+                    <span class="card-people__span text-decor">1-е место</span>
+                  </div>
+                  <div class="card-people__info">
+                    <a href="#" class="card-people__link t3 t3-fs">Квентин Тарантино</a>
+                    <p class="card-people__text text-name">Quentin Tarantino</p>
+                    <p class="card-people__age text-decor">57 лет</p>
+                  </div>
+                </article>
+              </li>
+              <li class="persons__item-people card-people">
+                <article class="card-people__article">
+                  <picture class="card-people__picture">
+                    <source srcset="./img/image26.webp">
+                    <img src="./img/image26.png" alt="Постер фильма {{}}">
+                  </picture>
+                  <div class="card-people__position">
+                    <span class="card-people__span text-decor">2-е место</span>
+                  </div>
+                  <div class="card-people__info">
+                    <a href="#" class="card-people__link t3 t3-fs">Джейсон Стейтем</a>
+                    <p class="card-people__text text-name">Jason Statham</p>
+                    <p class="card-people__age text-decor">52 лет</p>
+                  </div>
+                </article>
+              </li>
+              <li class="persons__item-people">
+                <ul class="persons__list-table">
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="persons__item-rating">
+                    <article class="persons__article d-flex">
+                      <div class="persons__info">
+                        <a href="#" class="t4 author-link link">Тинто Брассcc</a>
+                        <p class="persons__text news-decor">Tinto Brass</p>
+                        <p class="persons__age text-decor">87 лет</p>
+                      </div>
+                      <div class="persons__position">
+                        <span class="persons__span text-decor">3-е место</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section">
+      <div class="container">
+        <div class="news d-flex">
+          <h2 class="news__t2 t2">Последние новости</h2>
+          <a href="#" class="news__link link link-next">Все новости</a>
+        </div>
+
+        <div class="news__content">
+          <ul class="news__list">
+            <li class="news__item card-news card-news--big">
+              <article class="card-news__article">
+                <picture class="card-news__picture">
+                  <source srcset="./img/image3(1).webp">
+                  <img src="./img/image3(1).png" alt="Новость {{}}">
+                </picture>
+
+                <div class="card-news__info">
+                  <span class="card-news__span news-data news-span">15 Апр 2020</span>
+                  <span class="card-news__span news-views news-span">242</span>
+                  <span class="card-news__span news-comments news-span">14</span>
+                </div>
+
+                <div class="card-news__blog">
+                  <a href="#" class="card-news__title t3 link">
+                    Не время умирать. Перенос релиза фильма
+                  </a>
+                  <p class="card-news__text">
+                    Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках спецификации современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как претенденты на роль ключевых факторов.
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <li class="news__item card-news">
+              <article class="card-news__article">
+                <picture class="card-news__picture">
+                  <source srcset="./img/image4(2).webp">
+                  <img src="./img/image4(2).png" alt="Новость {{}}">
+                </picture>
+
+                <div class="card-news__info-mini">
+                  <span class="card-news__span news-span news-data">15 Апр 2020</span>
+                </div>
+
+                <div class="card-news__blog-mini">
+                  <a href="#" class="card-news__title t3-fw link">
+                    Как изменили Соника с последнего анонса
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="news__item card-news">
+              <article class="card-news__article">
+                <picture class="card-news__picture">
+                  <source srcset="./img/image4(2).webp">
+                  <img src="./img/image4(2).png" alt="Новость {{}}">
+                </picture>
+
+                <div class="card-news__info-mini">
+                  <span class="card-news__span news-span news-data">15 Апр 2020</span>
+                </div>
+
+                <div class="card-news__blog-mini">
+                  <a href="#" class="card-news__title t3-fw link">
+                    Как изменили Соника с последнего анонса
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="news__item card-news card-news">
+              <article class="card-news__article">
+                <picture class="card-news__picture">
+                  <source srcset="./img/image4(2).webp">
+                  <img src="./img/image4(2).png" alt="Новость {{}}">
+                </picture>
+
+                <div class="card-news__info-mini">
+                  <span class="card-news__span news-span news-data">15 Апр 2020</span>
+                </div>
+
+                <div class="card-news__blog-mini">
+                  <a href="#" class="card-news__title t3-fw link">
+                    Как изменили Соника с последнего анонса
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="news__item card-news card-news">
+              <article class="card-news__article">
+                <picture class="card-news__picture">
+                  <source srcset="./img/image4(2).webp">
+                  <img src="./img/image4(2).png" alt="Новость {{}}">
+                </picture>
+
+                <div class="card-news__info-mini">
+                  <span class="card-news__span news-span news-data">15 Апр 2020</span>
+                </div>
+
+                <div class="card-news__blog-mini">
+                  <a href="#" class="card-news__title t3-fw link">
+                    Как изменили Соника с последнего анонса
+                  </a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="novelty section">
+      <div class="container">
+        <div class="novelty__menu d-flex">
+          <h2 class="novelty__t2 t2">Ожидаемые новинки</h2>
+          <div class="novelty__navigation">
+            <div class="novelty__swiper-button-prev navigation-prew swiper-button-prev"></div>
+            <div class="novelty__swiper-pagination swiper-pagination"></div>
+            <div class="novelty__swiper-button-next navigation-next swiper-button-next"></div>
+          </div>
+        </div>
+
+        <div class="novelty__swiper swiper">
+          <ul class="novelty__swiper-wrapper swiper-wrapper">
+            <li class="novelty__swiper-slide swiper-slide card">
+              <article class="card__article">
+                <picture class="card__picture">
+                  <source srcset="./img/image1.webp">
+                  <img src="./img/image1.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <p class="card__text link-category">14 мая 2020 в России</p>
+              </article>
+            </li>
+            <li class="novelty__swiper-slide swiper-slide card">
+              <article class="card__article">
+                <picture class="card__picture">
+                  <source srcset="./img/image1.webp">
+                  <img src="./img/image1.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <p class="card__text link-category">14 мая 2020 в России</p>
+              </article>
+            </li>
+            <li class="novelty__swiper-slide swiper-slide card">
+              <article class="card__article">
+                <picture class="card__picture">
+                  <source srcset="./img/image1.webp">
+                  <img src="./img/image1.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <p class="card__text link-category">14 мая 2020 в России</p>
+              </article>
+            </li>
+            <li class="novelty__swiper-slide swiper-slide card">
+              <article class="card__article">
+                <picture class="card__picture">
+                  <source srcset="./img/image1.webp">
+                  <img src="./img/image1.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <p class="card__text link-category">14 мая 2020 в России</p>
+              </article>
+            </li>
+            <li class="novelty__swiper-slide swiper-slide card">
+              <article class="card__article">
+                <picture class="card__picture">
+                  <source srcset="./img/image1.webp">
+                  <img src="./img/image1.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <p class="card__text link-category">14 мая 2020 в России</p>
+              </article>
+            </li>
+            <li class="novelty__swiper-slide swiper-slide card">
+              <article class="card__article">
+                <picture class="card__picture">
+                  <source srcset="./img/image1.webp">
+                  <img src="./img/image1.png" alt="Постер фильма {{}}">
+                </picture>
+                <a href="#" class="card__link link-cinema t4 t4-fs">Побег из Претории</a>
+                <p class="card__text link-category">14 мая 2020 в России</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="collection section" id="collection">
+      <div class="container">
+        <div class="collection__menu d-flex">
+          <h2 class="collection__t2 t2">Кассовые сборы</h2>
+          <div class="collection__date">
+            <p class="date-text numder">
+              13 марта — 15 марта
+            </p>
+          </div>
+          <div class="collection__decor decor"></div>
+          <ul class="collection__list genre">
+            <li class="collection__item"><button aria-label="Навигации по категориям" data-tab="#CollectionTab1" class="collection___tab btn-reset tab-state link-color">Россия</button></li>
+            <li class="collection__item"><button aria-label="Навигации по категориям" data-tab="#CollectionTab2" class="collection___tab tab-state activ-tabs btn-reset link-color ">Весь мир</button></li>
+            <li class="collection__item"><button aria-label="Навигации по категориям" data-tab="#CollectionTab3" class="collection___tab btn-reset tab-state link-color">США и Канада</button></li>
+          </ul>
+        </div>
+
+        <div class="collection__content">
+          <!--tab1-->
+          <ul class="collection__list-cinema" id="CollectionTab1">
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c1.webp">
+                  <img src="./img/c1.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c1.webp">
+                  <img src="./img/c1.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c1.webp">
+                  <img src="./img/c1.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c1.webp">
+                  <img src="./img/c1.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+              <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c1.webp">
+                  <img src="./img/c1.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <!--tab2-->
+          <ul class="collection__list-cinema collection__list-cinema--active" id="CollectionTab2">
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c2.webp">
+                  <img src="./img/c2.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c2.webp">
+                  <img src="./img/c2.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c2.webp">
+                  <img src="./img/c2.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c2.webp">
+                  <img src="./img/c2.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+              <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/c2.webp">
+                  <img src="./img/c2.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <!--tab3-->
+          <ul class="collection__list-cinema" id="CollectionTab3">
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/Rectangle13.webp">
+                  <img src="./img/Rectangle13.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/Rectangle13.webp">
+                  <img src="./img/Rectangle13.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/Rectangle13.webp">
+                  <img src="./img/Rectangle13.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+            <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/Rectangle13.webp">
+                  <img src="./img/Rectangle13.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+              <li class="collection__item card-mini">
+              <article class="collection__article d-flex">
+                <picture class="card-mini__picture">
+                  <source srcset="./img/Rectangle13.webp">
+                  <img src="./img/Rectangle13.png" alt="Постер фильма {{}}">
+                </picture>
+                <div class="card-mini__content">
+                  <a href="#" class="link-cinema t4 t4-fs">1. Бладшот</a>
+                  <p class="card-mini__link-category link-category">$13 млн</p>
+                  <p class="card-mini__text text-budget">$15.1 млн за 4 недели</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top bac-newsletter">
+
+          <ul class="footer__list-newsletter">
+            <li class="footer__item-newsletter">
+              <img src="./img/Логотип.webp" alt="Логотип">
+            </li>
+            <li class="footer__item-newsletter">
+              <h2 class="footer__title t2 t2-fs">
+                Подпишитесь на E-mail рассылку
+              </h2>
+            </li>
+            <li class="footer__item-newsletter">
+              <p class="footer__text newsletter-text">
+                Если хотиет быть в курсе последних новостей и новинок кино — заполните форму ниже и оформите бесплатную E-mail рассылку!
+              </p>
+            </li>
+            <li class="footer__item-newsletter">
+              <form class="footer__form">
+                <div class="footer__form-top d-flex">
+                  <input type="text" class="footer__inp" placeholder="Введите свой E-mail адрес" aria-label="Введите свой E-mail адрес">
+                  <button class="footer__btn btn-reset btn btn-color">Подписаться</button>
+                </div>
+
+                <div class="footer__form-bottom">
+                  <label class="footer__label check">
+                    <input type="checkbox" class="check__inp" checked>
+                    <span class="check__box"></span>
+                    <span class="footer__text agreement-text">
+                      Соглашаюсь на условия
+                      <a href="#" class="footer__link-agreement agreement-link">
+                        политики конфиденциальности
+                      </a>
+                    </span>
+                  </label>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer__bottom-list">
+          <li class="footer__item-social">
+            <ul class="footer__social-list d-flex">
+              <li class="footer__item">
+                <a href="https://vk.com/" class="footer__link">
+                  <svg class="social-svg svg-w">
+                    <use xlink:href="#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="https://dzen.ru/" class="footer__link">
+                  <svg class="social-svg svg-w">
+                    <use xlink:href="#zen"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="https://ok.ru/" class="footer__link">
+                  <svg class="social-svg svg-w">
+                    <use xlink:href="#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="https://web.telegram.org/" class="footer__link">
+                  <svg class="social-svg svg-w">
+                    <use xlink:href="#tg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item-nav">
+            <nav class="footer__nav">
+              <ul class="footer__list-nav list-links d-flex">
+                <li class="footer__item">
+                  <a href="#" class="footer__link link">Афиша</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link link">Новости</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link link">Персоны</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link link">Рейтинги</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link link">Рецензии</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link link">Каталог фильмов</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li class="footer__item-rights">
+            <p class="footer__text link-info link-info--color">2023 © Kinoarea. Все права защищены</p>
+          </li>
+          <li class="footer__item-policy">
+            <a href="#" class="footer__link link-info link-info--color link-dec">Политика конфиденциальности</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    const trailersSwiperTwo = new Swiper(".trailers__swiper-two", {
+      spaceBetween: 20,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+
+      scrollbar: {
+        el: '.trailers__swiper-scrollbar',
+        draggable: true,
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 2
+          },
+        600: {
+          slidesPerView: 4
+        }
+      }
+    });
+    const trailersSwiperOne = new Swiper(".trailers__swiper-one", {
+      spaceBetween: 0,
+      thumbs: {
+        swiper: trailersSwiperTwo,
+      },
+    });
+  </script>
+</body>
+
+</html>

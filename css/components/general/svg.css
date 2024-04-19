@@ -1,0 +1,74 @@
+svg {
+  -webkit-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+svg:hover {
+  fill: var(--white);
+}
+svg:focus {
+  fill: var(--white);
+}
+svg:active {
+  fill: var(--cerulean-blue);
+}
+
+.social-svg {
+  width: 15px;
+  height: 15px;
+  fill: #686868;
+}
+
+.like-svg {
+  fill: var(--white);
+  width: 26px;
+  height: 26px;
+}
+
+.like-transform {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.search-svg {
+  fill: var(--cerulean-blue);
+  width: 20px;
+  height: 20px;
+}
+
+.svg-w {
+  width: 22px;
+  height: 22px;
+}
+
+.navigation-prew {
+  position: relative;
+}
+.navigation-prew::after {
+  content: url(../img/svg/Arrow3.svg);
+}
+
+.navigation-next {
+  position: relative;
+}
+.navigation-next::after {
+  content: url(../img/svg/Arrow2.svg);
+}
+
+.play-svg {
+  fill: var(--white);
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1400px) {
+  .svg-w {
+    width: 20px;
+    height: 20px;
+  }
+  .like-svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+/*# sourceMappingURL=svg.css.map */
